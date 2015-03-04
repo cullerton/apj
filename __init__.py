@@ -13,7 +13,7 @@ app = create_app()
 
 
 @app.route('/')
-def hello_world():
+def apj():
     return render_template('apj.html')
 
 if __name__ == '__main__':
