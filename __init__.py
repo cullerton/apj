@@ -17,4 +17,4 @@ def apj():
     return render_template('apj.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
