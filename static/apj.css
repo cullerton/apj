@@ -1,0 +1,20 @@
+.container .jumbotron h2 div {
+    padding: .25em;
+}
+
+.container .jumbotron h2 {
+    margin-top: 0;
+}
+
+.container .jumbotron {
+    margin: 1em;
+    padding: .25em;
+}
+
+.well p {
+    font-size: larger;
+}
+
+footer {
+    text-align: center;
+}

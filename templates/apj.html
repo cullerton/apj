@@ -1,0 +1,65 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Acoustic Pizza Jam{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='apj.css')}}">
+{% endblock %}
+
+{% block body_attribs %} role="document" {% endblock %}
+
+{% block content %}
+<nav class="navbar navbar-inverse ">
+    <div class="container">
+        <a class="navbar-brand" href="/">Acoustic Pizza Jam</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="jumbotron">
+        <h2>
+            <div>
+                <span class="label label-warning">What</span>
+                <span>Pizza and Friends</span>
+            </div>
+            <div>
+                <span class="label label-warning">When</span>
+                <span>6pm, on the 15th of the month</span>
+            </div>
+            <div>
+                <span class="label label-warning">Where</span>
+                <span>Mike and Zoey's</span>
+            </div>
+            <div>
+                <span class="label label-warning">Bring</span>
+                <span>Pizza topping, dessert, munchies, acoustic instrument, fun toy, etc.</span>
+            </div>
+        </h2>
+    </div>
+
+    <div class='well'>
+        <p>When my friend Leanne moved into the neighborhood, she brought a wonderful tradition of gathering once a month for community dinner. Leanne usually cooked the main course, and everyone else brought what they could.</p>
+
+        <p>Sometimes it was a packed house, with three generations of friends and family eating together. Other times, there were more dogs than humans. But it was always a great time to gather with friends, eat good food, and relax--even when the dogs were barking and the kids were crying.</p>
+
+        <p>This is my spin on her practice, while she is away.</p>
+
+        <p>Please bring your favorite pizza topping, or something else to share. We will provide all the fixings for a delicious homemade cheese pizza. The rest is up to you. That means the toppings you bring determine the pizzas we eat. So make sure it's something I like!</p>
+
+        <p>This is a family friendly event. Children passing the dog test<sup>(1)</sup> are welcome.</p>
+
+        <p>The point is to spend time with each other.</p>
+    </div>
+    <div class='well'>
+        <p><sup>(1)</sup>Children must pass the dog test. This means they must be as well-behaved as the dogs. This may sound like an easy test. It is not.</p>
+    </div>
+</div>
+
+<footer>
+    © Mike Cullerton 2015
+    <br />
+    Clearly, this site is a work in progress.
+</footer>
+{% endblock %}
